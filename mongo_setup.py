@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Replace this with your actual MongoDB Atlas connection string
-MONGO_URI = "mongodb+srv://mongo:shubhk2004@cluster0.mj3tg8t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb+srv://yvstanwar:Yash%401234%40@cluster0.mj3tg8t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 try:
     client = MongoClient(MONGO_URI)
@@ -12,8 +12,8 @@ try:
     collection = db["companies"]
 
     # Insert a test document
-    sample_data = {"company_name": "TCS", "sector": "IT", "market_cap": "₹13.5T"}
-    collection.insert_one(sample_data)
+    # sample_data = {"company_name": "TCS", "sector": "IT", "market_cap": "₹13.5T"}
+    # collection.insert_one(sample_data)
 
     print("Inserted test data into MongoDB!")
 
